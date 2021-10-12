@@ -5,10 +5,10 @@ export const Wrapper = styled.footer`
 	padding: 20px;
 	color: var(--white);
 	margin-top: 40px;
+	min-width: 100%;
 `
 
 export const Content = styled.div`
-	/* border: 2px solid white; */
 	max-width: var(--maxWidth);
 	margin: 0 auto;
 	display: flex;
