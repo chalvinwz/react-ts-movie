@@ -10,9 +10,14 @@ import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config"
 // image
 import NoImage from "../../images/no_image.jpg"
 
-import PropTypes from "prop-types"
+// import type
+import { MovieState } from "../../hooks/useMovieFetch"
 
-const MovieInfo = ({ movie }) => {
+type Props = {
+	movie: MovieState
+}
+
+const MovieInfo: React.FC<Props> = ({ movie }) => {
 	return (
 		<Wrapper backdrop={movie.backdrop_path}>
 			<Content>
@@ -22,6 +27,7 @@ const MovieInfo = ({ movie }) => {
 							? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
 							: NoImage
 					}
+					clickable={false}
 				/>
 				<Text>
 					<h1>{movie.title}</h1>
@@ -45,7 +51,5 @@ const MovieInfo = ({ movie }) => {
 		</Wrapper>
 	)
 }
-
-MovieInfo.propTypes = { movie: PropTypes.object }
 
 export default MovieInfo

@@ -5,26 +5,28 @@ import { GlobalStyle } from "./GlobalStyle"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 // components
-import Header from "./components/Header/Header"
+import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home"
 import Movie from "./components/Movie"
 import NotFound from "./components/NotFound"
+import Footer from "./components/Footer/Footer"
 
-const App = () => {
+const App: React.FC = () => {
 	return (
 		<Router>
-			<Header />
+			<Navbar />
 			<Switch>
 				<Route exact path='/'>
 					<Home />
 				</Route>
-				<Route exact path='/:movieId'>
+				<Route path='/movie/:movieId'>
 					<Movie />
 				</Route>
 				<Route path='/*'>
 					<NotFound />
 				</Route>
 			</Switch>
+			<Footer />
 			<GlobalStyle />
 		</Router>
 	)

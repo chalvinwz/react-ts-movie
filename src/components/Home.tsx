@@ -17,7 +17,7 @@ import Button from "./Button/Button"
 // images
 import NoImage from "../images/no_image.jpg"
 
-const Home = () => {
+const Home: React.FC = () => {
 	const { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore } =
 		useHomeFetch()
 

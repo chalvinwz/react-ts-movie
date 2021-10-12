@@ -2,13 +2,17 @@ import { Image } from "./Thumb.styles"
 
 import { Link } from "react-router-dom"
 
-import PropTypes from "prop-types"
+type Props = {
+	image: string
+	movieId?: number
+	clickable: boolean
+}
 
-const Thumb = ({ image, movieId, clickable }) => {
+const Thumb: React.FC<Props> = ({ image, movieId, clickable }) => {
 	return (
 		<div>
 			{clickable ? (
-				<Link to={`/${movieId}`}>
+				<Link to={`/movie/${movieId}`}>
 					<Image src={image} alt='movie thumb' />
 				</Link>
 			) : (
@@ -16,12 +20,6 @@ const Thumb = ({ image, movieId, clickable }) => {
 			)}
 		</div>
 	)
-}
-
-Thumb.propTypes = {
-	image: PropTypes.string,
-	movieId: PropTypes.number,
-	clickable: PropTypes.bool,
 }
 
 export default Thumb
