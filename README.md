@@ -9,3 +9,8 @@ This is a project from a tutorial on [FreeCodeCamp Youtube Channel](https://www.
 <li> How to work with typescript in React
 <li> Styled-components
 <li> API consume, fetching data from API
+<li> Deploying react application to netlify
+
+### You can check my application here
+
+https://chalvinreactmovie.netlify.app/
