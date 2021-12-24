@@ -4,12 +4,12 @@ This is a project from a tutorial on [FreeCodeCamp Youtube Channel](https://www.
 
 ##### What I have learned from this tutorial:
 
-<li> React hooks
-<li> Custom hooks
-<li> How to work with typescript in React
-<li> Styled-components
-<li> API consume, fetching data from API
-<li> Deploying react application to netlify
+- React hooks
+- Custom hooks
+- How to work with typescript in React
+- Styled-components
+- API consume, fetching data from API
+- Deploying react application to netlify
 
 ### You can check my application here
 
