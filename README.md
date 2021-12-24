@@ -1,4 +1,4 @@
-## Project from FreeCodeCamp Tutorial
+## Movie Database
 
 This is a project from a tutorial on [FreeCodeCamp Youtube Channel](https://www.youtube.com/watch?v=nTeuhbP7wdE). We build an application where user can see popular movies, the information about a movie and the actors, etc. I really enjoyed this tutorial and learned a lot of new things from there.
 
